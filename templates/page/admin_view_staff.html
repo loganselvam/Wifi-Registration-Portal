@@ -1,0 +1,26 @@
+
+   <form  action="/admin_view_staff" method="post" enctype="multipart/form-data" name="form1" id="form1">
+
+
+<table width="102%" height="139" border="0" align="center">
+  
+  <tr>
+   
+    <td width="10%" height="44" bgcolor="#FFFFFF" class="tdsh"><h5 class="style6 style1">Register Number </h5></td>
+    <td width="16%" bgcolor="#FFFFFF" class="tdsh"><h5 class="style6 style1">Name</h5></td>
+    <td width="16%" bgcolor="#FFFFFF" class="tdsh"><h5 class="style6 style1">Department</h5></td>
+    <td width="15%" bgcolor="#FFFFFF" class="tdsh"><h5 class="style6 style1">Contact</h5></td>
+    <td width="9%" bgcolor="#FFFFFF" class="tdsh"><h5 class="style6 style1">Device</h5></td>
+    <td width="8%" bgcolor="#FFFFFF" class="tdsh"><h5 class="style6 style1">Email</h5></td>
+    <td width="5%" bgcolor="#FFFFFF" class="tdsh"><h5 class="style6 style1">Date</h5></td>
+    <td width="6%" bgcolor="#FFFFFF" class="tdsh"><h5 class="style6 style1">Mac</h5></td>
+    <td width="15%" bgcolor="#FFFFFF" class="tdsh"><h5 class="style6 style1">Desgination</h5></td>
+    
+   </tr>
+  {% for row in items %}
+  <tr> {% for d in row %}
+    <td class="tdsh" bgcolor="#FFFFFF" >{{ d }}</td>
+    {% endfor %}    </tr>
+  {% endfor %}
+</table>
+</form>

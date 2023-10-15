@@ -1,0 +1,137 @@
+
+<!--
+   Author: W3layouts
+   Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Wifi Register Portal</title>
+  <style>
+  
+ 
+   {% include 'css/style-starter.css' %}
+  
+
+  </style>
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+  </head>
+  <body id="home">
+<section class=" w3l-header-4 header-sticky">
+  <header class="absolute-top">
+      <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <h1><a class="navbar-brand " href="/"><img src="/static/images/bhc.png" alt="" width="50" height="50" class="img-responsive logo-logo">
+                   Bishop Heber College(Autonomous)
+                  </a></h1>
+              <button class="navbar-toggler bg-gradient" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse jus" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                      {% include 'menu/indexmenu.html' %}
+                  </ul>
+              </div>
+      </div>
+
+      </nav>
+      </div>
+  </header>
+</section>
+
+<script src="assets/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+<!--bootstrap working-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- //bootstrap working-->
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+      $('.navbar-toggler').click(function () {
+          $('body').toggleClass('noscroll');
+      })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!-- breadcrumbs -->
+    <section class="w3l-inner-banner-main">
+        <div class="about-inner ">
+            <div class="container">     
+                        <ul class="breadcrumbs-custom-path">
+                    <li class="right-side "><a href="/" class="">Home <span class="fa fa-angle-right" aria-hidden="true"></span></a> <p></li>
+                    <li class="active ">About</li>
+                </ul></div>
+
+      </div>
+        </div>
+    </section>
+<!-- breadcrumbs //-->
+<section class="w3l-content-with-photo-4"  id="about">
+    <div class="content-with-photo4-block ">
+        <div class="container">
+            <div class="main-titles-head text-center">
+                <h3 class="header-name ">
+                   Student Register
+                </h3>
+                {% include 'page/user_register.html' %}
+                <div class="border-line  "></div>
+            <div class="border-line2  "></div>
+            </div>
+      </div>
+    </div>
+</section>
+  <section class="w3l-recent-work-hobbies"></section>
+<section class="w3l-about "></section>
+
+  <section class="w3l-footers-20">
+	
+	    <div class="below-section">
+		<div class="container">
+			<div class="copyright-footer">
+			  <div class="columns copy-right text-md-right ">
+				<p>© 2023 Staff Management All rights reserved </p>
+			</div>
+		</div>
+		
+	</div>
+	</div>
+
+</section>
+</section>
+<!-- move top -->
+<button onClick="topFunction()" id="movetop" title="Go to top">
+	<span class="fa fa-angle-up"></span>
+</button>
+<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function () {
+		scrollFunction()
+	};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("movetop").style.display = "block";
+		} else {
+			document.getElementById("movetop").style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>
+<!-- /move top -->
+</body>
+
+</html>
